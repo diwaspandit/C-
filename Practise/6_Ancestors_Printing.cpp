@@ -26,7 +26,7 @@ int main(){
         cout << "Ancestors in " << consYear << ": " << numAnc << endl;
 
         numAnc = 2 * numAnc;
-        
+
         consYear = consYear - YEARS_PER_GEN;
     }
 
