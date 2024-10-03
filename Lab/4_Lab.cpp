@@ -27,11 +27,6 @@ int main()
     cout << "Enter the desired operation (+ - * /)\n";
     cin >> operation;
 
-    if (operation != '+' && operation != '-' && operation != '*' && operation != '/'){
-        cout << "Invalid Operator." << endl;
-        return 0;
-    }
-
     cout << "Enter the second number\n";
     cin >> second_num;
 
@@ -40,34 +35,34 @@ int main()
     switch(operation){
         case '+':
             result = first_num + second_num;
-            cout << "The sum of " << first_num << " and " << second_num <<
-             " is " << result << endl;
+            cout << "The sum of " << first_num << " and " 
+                << second_num << " is " << result << endl;
              break;
         
         case '-':
             result = first_num - second_num;
-            cout << "The difference of " << first_num << " and " << second_num <<
-             " is " << result << endl;
+            cout << "The difference of " << first_num << " and " 
+                << second_num << " is " << result << endl;
              break;
 
         case '*':
             result = first_num * second_num;
-            cout << "The multiplication of " << first_num << " and " << second_num <<
-             " is " << result << endl;
+            cout << "The multiplication of " << first_num << " and " 
+                << second_num << " is " << result << endl;
              break;
 
         case '/':
             if(second_num == 0){
-                cout << "Error: Division by zero is not allowed." << endl;
+                cout << "ERROR: Divide by zero." << endl;
             } else {
                 result = first_num / second_num;
-                cout << "The difference of " << first_num << " and " << second_num <<
-                    " is " << result << endl; 
+                cout << "The difference of " << first_num << " and " 
+                    << second_num << " is " << result << endl; 
             }
             break;              
 
         default:
-            cout << "Invalid Input." << endl;
+            cout << "ERROR: Invalid operator" << endl;
             break;
 
     }
